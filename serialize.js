@@ -1,6 +1,6 @@
 module.exports = serializeNode
 
-var voidElements = /area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr/i;
+var voidElements = /^area$|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr/i;
 
 function serializeNode(node) {
     switch (node.nodeType) {
